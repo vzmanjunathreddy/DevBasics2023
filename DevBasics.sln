@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basics", "Basics\Basics.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlStatements", "ControlStatements\ControlStatements.csproj", "{7F4E8060-C81E-449E-A668-7EC68DE01160}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\Collections.csproj", "{7555057C-A9F0-4524-B6E6-B6445F794616}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassandObjectsBasics", "ClassandObjectsBasics\ClassandObjectsBasics.csproj", "{50D2433F-13E6-4757-9F4D-37CBE57A3611}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{7F4E8060-C81E-449E-A668-7EC68DE01160}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F4E8060-C81E-449E-A668-7EC68DE01160}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F4E8060-C81E-449E-A668-7EC68DE01160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7555057C-A9F0-4524-B6E6-B6445F794616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7555057C-A9F0-4524-B6E6-B6445F794616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7555057C-A9F0-4524-B6E6-B6445F794616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7555057C-A9F0-4524-B6E6-B6445F794616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50D2433F-13E6-4757-9F4D-37CBE57A3611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D2433F-13E6-4757-9F4D-37CBE57A3611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D2433F-13E6-4757-9F4D-37CBE57A3611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D2433F-13E6-4757-9F4D-37CBE57A3611}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7F4E8060-C81E-449E-A668-7EC68DE01160}</ProjectGuid>
+    <ProjectGuid>{50D2433F-13E6-4757-9F4D-37CBE57A3611}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ControlStatements</RootNamespace>
-    <AssemblyName>ControlStatements</AssemblyName>
+    <RootNamespace>ClassandObjectsBasics</RootNamespace>
+    <AssemblyName>ClassandObjectsBasics</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArrayListDataTypes.cs" />
+    <Compile Include="Orders.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

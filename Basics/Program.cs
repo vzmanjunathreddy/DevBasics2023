@@ -3,3 +3,6 @@
 
 Console.WriteLine("Hello, World!");
 Console.ReadKey();
+
+List<string> products = new(); // New feature 
+List<string> products2 = new List<string>(); 
