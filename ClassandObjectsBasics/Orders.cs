@@ -8,7 +8,7 @@ namespace ClassandObjectsBasics
 {
     public class Orders
     {
-        private int qty=1;
+        private int qty;
         public int orderId { get; set; }
         public DateTime orderDate { get; set; }
         public string orderItem { get; set; }
@@ -18,23 +18,21 @@ namespace ClassandObjectsBasics
             get
             {
                 return qty;
+
             }
             set
             {
-                if(value<1)
+                if (value > 0)
                 {
-                    value = 1;
+                    qty = value;
                 }
                 else
                 {
-                    quantity = value;
+                    qty = 1;
                 }
-                
             }
         }
 
-            
-            
 
         private int discount = 10;
 
@@ -46,11 +44,11 @@ namespace ClassandObjectsBasics
 
         //Dependency Injection 
 
-        public Orders(int orderId, DateTime orderDate,int qunatity,double price)
+        public Orders(int orderId, DateTime orderDate,int quantity, double price)
         {
             this.orderId = orderId;
             this.orderDate = orderDate;
-            this.quantity = qunatity;
+            this.quantity = quantity;
             this.price = price;
 
         }
