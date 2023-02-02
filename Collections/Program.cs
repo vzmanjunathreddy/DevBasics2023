@@ -91,7 +91,7 @@ namespace Collections
 
             fruitsCollection.AddRange(fruitsCollection2);
 
-            List<string> stringCollection = new ; 
+          
 
 
         }
