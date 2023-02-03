@@ -18,7 +18,7 @@ namespace InheritanceDemo
         }
         public override void GetUserinfor()
         {
-            base.GetUserinfor();
+            base.GetUserinfor(); // to make use of base classs methods or pass values to base class a params
             Console.WriteLine($" Salary is {Salary}");
         }
 
