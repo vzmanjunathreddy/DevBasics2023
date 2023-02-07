@@ -11,9 +11,12 @@ namespace AsyncDemo
         static  void Main(string[] args)
         {
 
+            // Sync and Asycn.
+
             // Connect to db and get data  1 sec
             // Send an email request is recieved 2 sec
             // Update customerId in third party system 3 sec
+
 
             //6 seconds 
 

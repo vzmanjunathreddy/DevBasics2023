@@ -15,7 +15,7 @@ namespace DemoQueringData
 
         public string Category { get; set; }
 
-        public  IEnumerable<Fruits> GetListOfFruits()
+        public IEnumerable<Fruits> GetListOfFruits()
         {
             List<Fruits> fruitsCollection = null;
 
@@ -28,7 +28,7 @@ namespace DemoQueringData
                     Name = "Mango",
                     Price = 100,
                     Quantity = 1,
-                    Category="Seasonal"
+                    Category = "Seasonal"
                 };
 
                 Fruits fruits2 = new Fruits()
@@ -52,7 +52,7 @@ namespace DemoQueringData
                 });
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine($"Exception Occured is {ex.ToString()}");
             }
@@ -60,5 +60,38 @@ namespace DemoQueringData
             return fruitsCollection;
         }
 
+
+        public Fruits GetFruitById(int id)
+        {
+            Fruits fruit = null;
+
+            try
+            {
+                fruit = GetListOfFruits().Where(x => x.Id == id).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine();
+            }
+            return fruit;
+        }
+
+        public Fruits GetFruitByName(string name)
+        {
+            Fruits fruit = null;
+
+            try
+            {
+                fruit = GetListOfFruits().Where(x => x.Name == name).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine();
+            }
+            return fruit;
+        }
+
+        //Solid Priniciples 
+         // Single Responsi
     }
 }

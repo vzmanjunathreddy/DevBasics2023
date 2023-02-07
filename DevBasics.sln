@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoQueringData", "DemoQuer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncDemo", "AsyncDemo\AsyncDemo.csproj", "{9C155919-065D-4841-9BC5-818FA864CC8A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADODemo", "ADODemo\ADODemo.csproj", "{0BB33FD4-F59B-408B-8DDD-B746D0E41ABD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADODemoOrganised", "ADODemoOrganised\ADODemoOrganised.csproj", "{DE540DB0-BFF7-4146-BA80-1723A825F805}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{9C155919-065D-4841-9BC5-818FA864CC8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C155919-065D-4841-9BC5-818FA864CC8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C155919-065D-4841-9BC5-818FA864CC8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BB33FD4-F59B-408B-8DDD-B746D0E41ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BB33FD4-F59B-408B-8DDD-B746D0E41ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BB33FD4-F59B-408B-8DDD-B746D0E41ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BB33FD4-F59B-408B-8DDD-B746D0E41ABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE540DB0-BFF7-4146-BA80-1723A825F805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE540DB0-BFF7-4146-BA80-1723A825F805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE540DB0-BFF7-4146-BA80-1723A825F805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE540DB0-BFF7-4146-BA80-1723A825F805}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

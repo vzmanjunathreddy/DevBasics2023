@@ -26,6 +26,8 @@ namespace DemoQueringData
 
             // Business layer
 
+            var singlefruitObj = fruitObj.GetFruitById(1);
+
             var fruits = listOfFruits.Where(x => x.Quantity >= 10);
 
             var fruitsQuantitygreater10 = listOfFruits.Where(x => x.Quantity >= 10).Select(i=> new{i.Quantity,i.Name}).ToList();
