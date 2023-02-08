@@ -66,9 +66,6 @@ namespace ADODemoOrganised.Models
                     customersCollection.Add(customersDTO);
                     //Console.WriteLine($"Customer Id is {datarow["CustomerId"]} and  Name is {datarow["FirstName"] + "," + datarow["LastName"]}");
                 }
-
-
-
             }
             catch (Exception ex)
             {

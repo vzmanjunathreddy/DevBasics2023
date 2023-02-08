@@ -44,9 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerOrderDetails.cs" />
+    <Compile Include="Interfaces\ICustomerOrders.cs" />
     <Compile Include="Interfaces\ICustomers.cs" />
     <Compile Include="Interfaces\ISQLConnectionDTO.cs" />
     <Compile Include="Models\CustomersDTO.cs" />
+    <Compile Include="Models\CustomersOrderDTO.cs" />
     <Compile Include="Models\SQLConnectionDTO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
