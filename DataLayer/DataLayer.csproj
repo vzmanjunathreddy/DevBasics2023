@@ -5,19 +5,18 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2992231E-BFB1-4A1A-ADEF-030786BA8347}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>EFCodeFirstApproach</RootNamespace>
-    <AssemblyName>EFCodeFirstApproach</AssemblyName>
+    <ProjectGuid>{DFA9F478-743A-45C6-8FBA-851542441049}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataLayer</RootNamespace>
+    <AssemblyName>DataLayer</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -27,7 +26,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -53,34 +51,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customers.cs" />
-    <Compile Include="FoodDbConextCodeFirst.cs" />
-    <Compile Include="Migrations\202302091048194_InitialCreate.cs" />
-    <Compile Include="Migrations\202302091048194_InitialCreate.designer.cs">
-      <DependentUpon>202302091048194_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202302091051285_Initial_Db_creation_with_tables.cs" />
-    <Compile Include="Migrations\202302091051285_Initial_Db_creation_with_tables.designer.cs">
-      <DependentUpon>202302091051285_Initial_Db_creation_with_tables.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Orders.cs" />
-    <Compile Include="Orgnization.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="CustomersRepository.cs" />
+    <Compile Include="Intefaces\ICustomersRepository.cs" />
+    <Compile Include="Intefaces\IOrderRepository.cs" />
+    <Compile Include="Models\Class1.cs" />
+    <Compile Include="Models\Customers.cs" />
+    <Compile Include="Models\FoodDbConextCodeFirst.cs" />
+    <Compile Include="Models\Orders.cs" />
+    <Compile Include="Models\Orgnization.cs" />
+    <Compile Include="OrdersRepositary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SupportEmployees.cs" />
+    <Compile Include="Models\SupportEmployees.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202302091048194_InitialCreate.resx">
-      <DependentUpon>202302091048194_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202302091051285_Initial_Db_creation_with_tables.resx">
-      <DependentUpon>202302091051285_Initial_Db_creation_with_tables.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

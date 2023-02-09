@@ -5,10 +5,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2992231E-BFB1-4A1A-ADEF-030786BA8347}</ProjectGuid>
+    <ProjectGuid>{B96BDBD1-9B4D-4647-AD44-E209679242ED}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>EFCodeFirstApproach</RootNamespace>
-    <AssemblyName>EFCodeFirstApproach</AssemblyName>
+    <RootNamespace>APILayer</RootNamespace>
+    <AssemblyName>APILayer</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -53,34 +53,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customers.cs" />
-    <Compile Include="FoodDbConextCodeFirst.cs" />
-    <Compile Include="Migrations\202302091048194_InitialCreate.cs" />
-    <Compile Include="Migrations\202302091048194_InitialCreate.designer.cs">
-      <DependentUpon>202302091048194_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202302091051285_Initial_Db_creation_with_tables.cs" />
-    <Compile Include="Migrations\202302091051285_Initial_Db_creation_with_tables.designer.cs">
-      <DependentUpon>202302091051285_Initial_Db_creation_with_tables.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Orders.cs" />
-    <Compile Include="Orgnization.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SupportEmployees.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202302091048194_InitialCreate.resx">
-      <DependentUpon>202302091048194_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202302091051285_Initial_Db_creation_with_tables.resx">
-      <DependentUpon>202302091051285_Initial_Db_creation_with_tables.cs</DependentUpon>
-    </EmbeddedResource>
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
+      <Project>{dfa9f478-743a-45c6-8fba-851542441049}</Project>
+      <Name>DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceLayer\ServiceLayer.csproj">
+      <Project>{ad28f8b5-42a6-44aa-b8e4-7ab7ea9f976f}</Project>
+      <Name>ServiceLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
