@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var firstNumber = 1;
+    int secondNumber = 2;
+    string name = "Welcome";
+
+}
+@* syntax for Razor view engine to write C# code is @ symbol
+    Within { helps us to write more C# code }
+    *@
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>StudentData</title>
+</head>
+<body>
+    <div>
+        <h4>
+            @ViewBag.Welcomestring
+        </h4>
+
+        DateTime Now is : @DateTime.Now.ToString();
+        <ul>
+            @foreach (var std in ViewBag.Students)
+            {
+                <li> @std </li>
+            }
+        </ul>
+        Count of Students is @ViewBag.CountOfStudents
+    </div>
+</body>
+</html>

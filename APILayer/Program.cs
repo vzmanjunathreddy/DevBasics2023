@@ -15,7 +15,7 @@ namespace APILayer
         {
             CustomerOrderProcessingService customerOrderProcessing= new CustomerOrderProcessingService();
 
-            // Customers customers = new Customers
+            //Customers customers = new Customers
             //{
             //    Email = "DevCutomer4@Devapi.com",
             //    FirstName = "DevAPI",
@@ -24,20 +24,20 @@ namespace APILayer
             //    Phone = "56548"
             //};
 
-            //var isCustomerAdded= customerOrderProcessing.AddCustomer(customers);
+            //var isCustomerAdded = customerOrderProcessing.AddCustomer(customers);
 
-            //var customersCollection =  customerOrderProcessing.GetCustomers().Result;
+            var customersCollection = customerOrderProcessing.GetCustomers().Result;
 
-            //foreach(var customer in customersCollection)
+            //foreach (var customer in customersCollection)
             //{
             //    Console.WriteLine($"{customer.FirstName},{customer.LastName} and Email is {customer.Email}");
             //}
-            //Press F11 Key to get inside the method 
-            // Press F10 to execute 
+            //Press F11 Key to get inside the method
+            // Press F10 to execute
 
-            var isCusterDeleted = customerOrderProcessing.RemoveCustomer(1017);
+            //var isCusterDeleted = customerOrderProcessing.RemoveCustomer(1017);
 
-            Console.WriteLine($"Has the Customer been Deleted is {isCusterDeleted}");
+            //Console.WriteLine($"Has the Customer been Deleted is {isCusterDeleted}");
 
         }
     }

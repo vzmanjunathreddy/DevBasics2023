@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "HtmlHelperDemo";
+}
+<hr />
+<h4>Students Registration</h4>
+<hr />
+<div class="form-horizontal">
+    @using (Html.BeginForm("HTMLHelpersDemoPost", "Dev"))
+    {
+        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.Label("First Name", new { @class = "control-label col-sm-2" })
+
+            <div class="col-sm-10">
+                @Html.TextBox("firstname", null, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Last Name", new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Html.TextBox("lastname", null, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Email", new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Html.TextBox("email", null, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.Label("Gender", new { @class = "control-label col-sm-2" })
+            <div>
+                <div class="col-sm-10">
+                    Male @Html.RadioButton("Gender", "male")
+                    Female @Html.RadioButton("Gender", "female")
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.Label("Courses", new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                Salesforce @Html.CheckBox("Salesforce", new { value = "Salesforce" })
+                Angularjs @Html.CheckBox("Angularjs", new { value = "Angular" })
+                Reactjs @Html.CheckBox("Reactjs", new { value = "Reactjs" })
+                Azure @Html.CheckBox("Azure", new { value = "Azure" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.Label("Contact", new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Html.TextBox("contact", null, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @* @Html.DropDownList("My Passion", (IEnumerable<SelectListItem>)ViewBag.MyAreasOfInterest, new { onchange = "this.form.submit();", @class = "form-control" })*@
+            @Html.Label("My Passion", new { @class = "control-label col-sm-2" })
+            <div class="col-sm-10">
+                @Html.DropDownList("areaofInterest", new List<SelectListItem>
+                             {
+                                new SelectListItem{ Text="Dance", Value = "Dance" },
+                                new SelectListItem{ Text="Cricket", Value = "Cricket" },
+                                new SelectListItem{ Text="Indoor Games", Value = "Indoor Games" },
+                                new SelectListItem{ Text="Crafting", Value = "Crafting" },
+
+                        }, new { @class = "form-control" })
+            </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-2">
+
+                </div>
+                <div class="col-sm-10">
+                    <input type="submit" value="submit" class="btn btn-primary" />
+                </div>
+            </div>
+
+    }
+    </div>

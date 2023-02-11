@@ -6,6 +6,8 @@ using System.Collections;
 using System.Text;
 using System.Threading.Tasks;
 using DataLayer.Models;
+using System.ComponentModel.Design;
+using System.Data;
 
 namespace DataLayer
 {
@@ -67,13 +69,15 @@ namespace DataLayer
             IEnumerable<Customers> customers = null;
             try
             {
-                customers =await dbContext.Customers.Include(x => x.Orders).ToListAsync();
+                customers = await dbContext.Customers.Include(x => x.Orders).ToListAsync();
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
             }
-            return customers;
+            return  customers; 
         }
+
+       
     }
 }
