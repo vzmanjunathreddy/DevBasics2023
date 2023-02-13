@@ -21,6 +21,8 @@ namespace MVCDemo.Controllers
             //ViewBag is of Dynamic Property type which holds values and passes it to the view from controller
             // it used to pass tempoerory data from Controller to view
 
+            // ViewData we need to casting 
+
             List<string> listofStudents = new List<string>() { "Sachin", "Virat", "Yuvi" };
             ViewBag.Students = listofStudents;
             ViewBag.Welcomestring = "Welcome to MVC Programing";
@@ -35,6 +37,7 @@ namespace MVCDemo.Controllers
             return View();
         }
 
+
         [HttpPost]
         public ContentResult HTMLHelpersDemoPost()
         {
@@ -47,6 +50,12 @@ namespace MVCDemo.Controllers
                 "Contact   = " + Request.Form["contact"] + "<br/>" +
                  "My Areas of Interest is   = " + Request.Form["areaofInterest"] + "<br/>"
                 );
+        }
+
+        public string ThankU()
+        {
+            return "thank you for submitting the request";
+   
         }
     }
 

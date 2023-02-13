@@ -6,6 +6,7 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jqueryval")
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -24,6 +25,8 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Students", "HTMLHelpersDemo", "Dev") </li>
+                    <li>@Html.ActionLink("Mock Students", "Index", "Students") </li>
+                    <li>@Html.ActionLink("Customer Orders", "Index", "Customer") </li>
                 </ul>
             </div>
         </div>
