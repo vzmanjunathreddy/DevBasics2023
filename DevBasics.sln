@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicASPNet", "ClassicASP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCDemo", "MVCDemo\MVCDemo.csproj", "{D5AB630E-6707-4AC8-81FD-A0CA815BE7C2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTAPIDemo", "RESTAPIDemo\RESTAPIDemo.csproj", "{0E66D932-8CCC-407F-BF4B-BC4C5FC3C2A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{D5AB630E-6707-4AC8-81FD-A0CA815BE7C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5AB630E-6707-4AC8-81FD-A0CA815BE7C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5AB630E-6707-4AC8-81FD-A0CA815BE7C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E66D932-8CCC-407F-BF4B-BC4C5FC3C2A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E66D932-8CCC-407F-BF4B-BC4C5FC3C2A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E66D932-8CCC-407F-BF4B-BC4C5FC3C2A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E66D932-8CCC-407F-BF4B-BC4C5FC3C2A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

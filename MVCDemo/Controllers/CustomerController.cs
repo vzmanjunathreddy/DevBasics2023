@@ -17,10 +17,25 @@ namespace MVCDemo.Controllers
             _customersOrder = new CustomerOrderProcessingService();
         }
         // GET: Customer
-        public async Task<ActionResult> Index()
+        public async Task<ActionResult> Index(string searchString)
         {
-            var customers =await _customersOrder.GetCustomers();
-            return View(customers);
+            IEnumerable<CustomersDTO> customers = null;
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                customers = await _customersOrder.GetCustomers();
+
+                //  customers=customers.Where(x=>x.FirstName==searchString || x.LastName==searchString || x.Email==searchString).ToList();
+
+                 customers=customers.Where(x=>x.FirstName.Contains(searchString) || x.LastName.Contains(searchString) || x.Email.Contains(searchString)).ToList();
+                return View(customers);
+            }
+            else
+            {
+                customers = await _customersOrder.GetCustomers();
+                return View(customers);
+            }
+
         }
 
         // GET: Customer/Details/5

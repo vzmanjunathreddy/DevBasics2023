@@ -9,7 +9,7 @@ namespace ServiceLayer
 {
     public class CustomersDTO
     {
-        [Key]
+
         public int CustomerID { get; set; }
 
         [Required]
