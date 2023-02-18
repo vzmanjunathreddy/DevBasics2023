@@ -55,6 +55,23 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCDemo", "MVCDemo\MVCDemo.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTAPIDemo", "RESTAPIDemo\RESTAPIDemo.csproj", "{0E66D932-8CCC-407F-BF4B-BC4C5FC3C2A3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HTMLandCSS", "HTMLandCSS", "{6374A7E5-ADE0-446C-B48F-AEC1D5C75B6E}"
+	ProjectSection(SolutionItems) = preProject
+		BootrstrapDemo.html = BootrstrapDemo.html
+		dev1.css = dev1.css
+		HTMLPage1.html = HTMLPage1.html
+		RelativevsAbsolute.html = RelativevsAbsolute.html
+		zIndex.html = zIndex.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Javascript", "Javascript", "{A7C0E775-F8E7-4758-AFEF-F5143B5DFDE2}"
+	ProjectSection(SolutionItems) = preProject
+		DemoExternalJs.html = DemoExternalJs.html
+		DemoJS.html = DemoJS.html
+		demojs.js = demojs.js
+		externalcss.css = externalcss.css
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

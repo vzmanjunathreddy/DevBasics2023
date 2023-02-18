@@ -1,0 +1,25 @@
+﻿.parent {
+    border: 2px black dotted;
+    display: inline-block;
+    z-index: -1;
+}
+
+img {
+    z-index: -1;
+}
+
+.box {
+    display: inline-block;
+    background: red;
+    width: 100px;
+    height: 100px;
+}
+
+#two {
+    background: green;
+    top: 20px;
+    /*  0 to 1 */
+    opacity: 0.4;
+    left: 20px;
+    position: relative;
+}
